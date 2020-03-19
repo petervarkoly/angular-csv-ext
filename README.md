@@ -63,6 +63,7 @@ new AngularCsv(data, 'My Report');
 | **showLabels** | false      | If provided, would use this attribute to create a header row |
 | **showTitle** | false      |   |
 | **useBom** | true      | If true, adds a BOM character at the start of the CSV |
+| **useHeader** | false      | If true, only fields listed in header will be exported in CSV |
 | **noDownload** | false      | If true, disables automatic download and returns only formatted CSV |
 | **nullToEmptyString** | false      | If true, all null values will be changed to empty strings |
 
@@ -80,6 +81,7 @@ new AngularCsv(data, 'My Report');
     useBom: true,
     noDownload: true,
     headers: ["First Name", "Last Name", "ID"],
+    useHeader: false,
     nullToEmptyString: true,
   };
 
@@ -94,3 +96,4 @@ new AngularCsv(data, 'My Report');
  * [sn123](https://github.com/sn123)
  * [arf1980](https://github.com/arf1980)
  * [rob-moore](https://github.com/rob-moore)
+
